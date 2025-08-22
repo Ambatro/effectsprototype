@@ -86,7 +86,7 @@ function spawn() {
     }
 }
 
-const spiders = many(2, spawn)
+const spiders = many(5, spawn)
 
 addEventListener("pointermove", (e) => {
     spiders.forEach(spider => {
@@ -153,4 +153,5 @@ function noise(x, y, t = 101) {
 
 function pt(x,y){
     return {x,y}
+
 }
